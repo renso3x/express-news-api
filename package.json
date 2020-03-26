@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .bin/app.js",
+    "dev": "nodemon .bin/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.2",
+    "request": "^2.88.2",
+    "superagent": "^5.2.2",
+    "uuid": "^7.0.2"
+  }
+}
