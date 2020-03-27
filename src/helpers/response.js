@@ -5,11 +5,11 @@ function setHeaderToJSON(res) {
 exports.returnObject = function(object, res) {
   res.status(200);
   setHeaderToJSON(res);
-  res.end(object);
+  res.send(object);
 };
 
 exports.throwInternalServerError = function(res) {
   res.status(500);
   setHeaderToJSON(res);
-  res.end(JSON.stringify({errorMessage: 'An Unknown Error Has Occured'}));
+  res.send(JSON.stringify({errorMessage: 'An Unknown Error Has Occured'}));
 };
